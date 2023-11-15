@@ -1,0 +1,17 @@
+.ExpandWrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 300ms ease-in;
+}
+.ExpandContent {
+  min-height: 0;
+  transition: visibility 1s;
+  visibility: hidden;
+}
+.ExpandWrap--expanded {
+  grid-template-rows: 1fr;
+}
+.ExpandWrap--expanded .ExpandContent {
+  visibility: visible;
+}

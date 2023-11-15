@@ -1,0 +1,109 @@
+.MainNav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  background-color: var(--color-primary);
+  padding: 100px 0 0;
+}
+
+.MainNav a{
+  color: var(--color-dark);
+  &:hover{
+    color: var(--color-light);
+  }
+}
+
+a.MainNav__Email,
+a.MainNav__Phone,
+.MainNav a.SocialNav__Link {
+  color: var(--color-light);
+  &:hover{
+    color: var(--color-purple);
+  }
+}
+
+.MainNav__Grid, .MainNav__ContactGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+}
+
+.MainMenu__Link{
+  font-family: var(--typeface-heading);
+  font-size: var(--font-size--h2);
+  margin-bottom: var(--spacing--xs);
+}
+
+.MainNav__NewsletterHeader{
+  margin-bottom: var(--spacing--s);
+}
+.MainNav__ContactHeader {
+  margin-bottom: var(--spacing--xs);
+}
+
+.MainNav__Signup {
+  margin-bottom: var(--spacing--s);
+}
+
+.MainNav__Signup input {
+  color: var(--color-light);
+}
+
+
+.MainNav__Contact,
+.MainNav__Address {
+  margin-bottom: var(--spacing--xs);
+}
+
+.MainNav__Contact span {
+  display: block;
+}
+
+.MainNav__Address span:not([itemprop="postalCode"])::after {
+  content: ",";
+}
+
+
+/* Show / Hide Menu */
+.MainNav[aria-expanded="false"]{
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--global-transition);
+}
+
+.MainNav[aria-expanded="true"]{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hide Some Items on Mobiel */
+@media (--mq-phone) {
+  .MainNav__Signup,
+  .MainNav__NewsletterHeader {
+    display: none;
+  }
+}
+
+/* Tablet Up */
+@media (--mq-tablet-and-up) {
+  .MainNav__Grid,
+  .MainNav__ContactGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .MainNav__Col--contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .MainMenu__Link{
+    font-size: var(--font-size--h1);
+  }
+
+}
+

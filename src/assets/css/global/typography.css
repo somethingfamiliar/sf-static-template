@@ -1,0 +1,197 @@
+/* Text */
+p,
+ul,
+ol,
+small {
+  font-size: var(--font-size--base);
+  line-height: 1;
+  margin: 0;
+}
+
+/* Headings */
+.Heading {
+  font-family: var(--typeface-heading);
+  line-height: 1;
+  font-weight: 700; /* bold */
+  letter-spacing: 0;
+  margin: 0;
+}
+
+
+.h1 {
+  font-size: var(--font-size--h1);
+  line-height: 1;
+}
+
+
+.h2 {
+  font-size: var(--font-size--h2);
+}
+
+
+.h3 {
+  font-size: var(--font-size--h3);
+}
+
+
+.h4 {
+  font-size: var(--font-size--h4);
+}
+
+
+.h5 {
+  font-size: var(--font-size--h5);
+}
+
+
+.h6 {
+  font-size: var(--font-size--h6);
+}
+
+small,
+.small {
+  font-size: 80%;
+}
+
+.strikethough {
+  text-decoration: line-through;
+}
+
+.is-centered {
+  text-align: center;
+}
+
+/* Lists */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+/* Blockquote */
+blockquote {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: var(--typeface-serif);
+  font-weight: 500;
+  & p {
+    font-family: var(--typeface-serif);
+    font-weight: 500;
+    font-size: var(--font-size--h4);
+  }
+  &::before {
+    content: "\201C";
+    font-weight: 500;
+    font-family: var(--typeface-serif);
+    font-size: var(--font-size--h1);
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    left:-40px;
+  }
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+
+.Eyebrow{
+  font-family: var(--typeface-serif);
+}
+
+.Subtitle {
+font-size: var(--font-size--h4);
+}
+
+a.Button{
+  color: var(--color-primary);
+}
+
+
+/* UGC */
+.ugc {
+
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
+    font-family: var(--typeface-heading);
+    line-height: 1;
+    font-weight: 700; /* bold */
+    letter-spacing: 0;
+    margin: 0;
+  }
+
+  h1{
+    font-size: var(--font-size--h1);
+    line-height: 1;
+  }
+  h2 {
+    font-size: var(--font-size--h2);
+  }
+  h3 {
+    font-size: var(--font-size--h3);
+  }
+  h4{
+    font-size: var(--font-size--h4);
+  }
+  h5 {
+    font-size: var(--font-size--h5);
+  }
+  h6{
+    font-size: var(--font-size--h6);
+  }
+
+  & ul,
+  & ol {
+    padding-inline-start: 1em;
+  }
+
+  & ul{
+    list-style-type: disc;
+  }
+  & ol {
+    list-style-type: decimal;
+  }
+
+  & > * + * {
+    margin-block-start: var(--flow-space, 1em);
+  }
+
+  & > p + p {
+    margin-block-start: var(--flow-space, 1.5em);
+  }
+
+  & p,
+  & ul,
+  & ol {
+    line-height: 1.2;
+    max-width: 75ch;
+  }
+}
+
+.lead {
+  font-size: var(--font-size--lead);
+  & p,
+  & ul,
+  & ol {
+    font-size: var(--font-size--lead);
+  }
+}

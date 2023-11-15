@@ -1,0 +1,25 @@
+.ContentCarousel {
+  position: relative;
+}
+
+.ContentCarousel__Slides {
+  display: block;
+}
+
+.ContentCarousel__Nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.ContentCarousel__Button,
+.Carousel__Button {
+  color: var(--color-black);
+  border: 0;
+  &:hover{
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border-color: var(--color-black);
+  }
+}

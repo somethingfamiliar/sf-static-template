@@ -1,0 +1,122 @@
+/* Fonts */
+.Font{
+  display: block;
+  margin-bottom: var(--spacing-m);
+}
+
+.Font__TypefaceList {
+  display: block;
+  margin-bottom: var(--spacing-m);
+}
+
+.Font__TypefaceList li {
+  font-size: var(--font-size--h1);
+  margin-left: var(--spacing-s);
+}
+
+.Font__Typeface--pp-right-grotesk{
+  font-family: var(--typeface-heading);
+  font-weight: 700;
+}
+.Font__Typeface--bogue{
+  font-family: var(--typeface-serif);
+  font-weight: 500;
+}
+.Font__Typeface--dm-sans-reg{
+  font-family: var(--typeface-global);
+  font-weight: 400;
+}
+.Font__Typeface--dm-sans-bold{
+  font-family: var(--typeface-global);
+  font-weight: 700;
+}
+.Font__Typeface--dm-sans-mono{
+  font-family: var(--typeface-mono);
+}
+
+/* Colours */
+
+.Colour__List{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  width: 100%;
+}
+
+.Colour__Item{
+  display: block;
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+
+.Colour__Item--black{background-color: var(--color-black); color: var(--color-white);}
+.Colour__Item--white{background-color: var(--color-white);}
+.Colour__Item--pink{background-color: var(--color-pink);}
+.Colour__Item--purple{background-color: var(--color-purple);}
+.Colour__Item--dark-purple{background-color: var(--color-dark-purple);}
+.Colour__Item--yellow{background-color: var(--color-yellow);}
+.Colour__Item--light-yellow{background-color: var(--color-light-yellow);}
+.Colour__Item--green{background-color: var(--color-green);}
+.Colour__Item--light-green{background-color: var(--color-light-green);}
+.Colour__Item--red{background-color: var(--color-red);}
+.Colour__Item--beige{background-color: var(--color-beige);}
+
+.Colour__Item{
+  span{
+    display: block;
+    position: absolute;
+    bottom: var(--spacing-s);
+    left: var(--spacing-s);
+  }
+}
+
+/* Images */
+.Image__List{
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  width: 100%;
+}
+
+.Image__Item{
+  flex: 0 0 auto;
+  display: block;
+  position: relative;
+  span{
+    display: block;
+    position: absolute;
+    bottom: var(--spacing-s);
+    left: var(--spacing-s);
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    padding: var(--spacing-s);
+  }
+}
+
+.Image__Item--double{
+  display: flex;
+  gap: var(--gap);
+  img {
+    flex: 0 0 clac(50% - var(--gap));
+  }
+}
+
+.Image__Item--landscape img{
+  aspect-ratio: var(--ar-landscape);
+  object-fit: cover;
+}
+.Image__Item--portrait img{
+  aspect-ratio: var(--ar-portrait);
+  object-fit: cover;
+}
+.Image__Item--half img{
+  aspect-ratio: var(--ar-half);
+  object-fit: cover;
+}
+.Image__Item--square img{
+  aspect-ratio: var(--ar-square);
+  object-fit: cover;
+}

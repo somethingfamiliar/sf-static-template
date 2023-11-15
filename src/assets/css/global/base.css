@@ -1,0 +1,94 @@
+/* Body + HTML */
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body.frontend {
+  display: block;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--typeface-global);
+  font-weight: 300;
+  position: relative;
+}
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+  touch-action: manipulation;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Links */
+a {
+  color: var(--color-pink);
+  transition: all var(--global-transition);
+  text-decoration: none;
+  text-decoration-skip: edges;
+  cursor: pointer;
+  & svg {
+    transition: fill var(--global-transition);
+  }
+  &:hover {
+    outline: 0;
+    color: var(--color-purple);
+    text-decoration: none;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+/* Media */
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+a img {
+  outline: 0;
+}
+
+video {
+  max-width: 100%;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+hr {
+  display: inline-block;
+  border: none;
+  border: 0;
+  border-top: 1px solid var(--color-black);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Stop Scroll */
+body.stop-scroll {
+  overflow: hidden;
+}

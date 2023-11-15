@@ -1,0 +1,101 @@
+:root {
+  /* Brand Colo(u)rs */
+  --color-black: #000000;
+  --color-white: #fdfcf8;
+  --color-beige: #FDFAE7;
+
+  --color-pink: #ff7690;
+  --color-purple: #ac78ff;
+  --color-dark-purple: #5b06ff;
+  --color-yellow: #ffe600;
+  --color-light-yellow: #fff18d;
+  --color-green: #00e05a;
+  --color-light-green: #aeffb2;
+  --color-red: #ff0843;
+
+  /* Site Colo(u)rs */
+  --color-light: var(--color-white);
+  --color-dark: var(--color-black);
+  --color-primary: var(--color-pink);
+  --color-secondary: var(--color-purple);
+  --color-tertiary: var(--color-yellow);
+  --color-success: var(--color-green)
+  --color-error: var(--color-red);
+  --color-warning: var(--color-yellow);
+
+  /* Sizing */
+  --spacing--xs: calc((16 / 16) * 1rem); /* 16px */
+  --spacing--s: calc((30 / 16) * 1rem); /* 30px */
+  --spacing--m: calc((60 / 16) * 1rem); /* 60px */
+  --spacing--l: calc((90 / 16) * 1rem); /* 90px */
+  --spacing--xl: calc((120 / 16) * 1rem); /* 120px */
+  --spacing--xxl: calc((150 / 16) * 1rem); /* 150px */
+
+  /* Grid */
+  --max-width: 1440px;
+  --max-width-wide: 1600px;
+  --gap: var(--spacing--s);
+
+  /* Page Padding */
+
+  /* Border Radius */
+  --border-radius: 6px;
+
+  /* A11y */
+  --a11y-outline: dashed 1px var(--color-red);
+  --a11y-outline-light: dashed 1px var(--color-white);
+
+  /* Type */
+  --typeface-global: "DM Sans", sans-serif;
+  --typeface-mono: "DM Mono", monospace;
+  --typeface-heading: "PPRightGroteskTall", sans-serif;
+  --typeface-serif: "Bogue", serif;
+
+  /* Font Sizes */
+  /* --px-to-rem: calc((var(--pixels) / 16) * 1rem); */
+  --font-size--h1: calc((80 / 16) * 1rem);
+  --font-size--h2: calc((48 / 16) * 1rem);
+  --font-size--h3: calc((32 / 16) * 1rem);
+  --font-size--h4: calc((34 / 16) * 1rem);
+  --font-size--h5: calc((20 / 16) * 1rem);
+  --font-size--h6: calc((16 / 16) * 1rem);
+  --font-size--base: calc((16 / 16) * 1rem);
+  --font-size--lead: calc((24 / 16) * 1rem);
+  --font-size--small: calc((14/ 16) * 1rem);
+
+
+  /* aspect ratios */
+  --ar-landscape: 16 / 9;
+  --ar-portrait: 3 / 4;
+  --ar-half: 8 / 9;
+  --ar-square: 1 / 1;
+
+  /* Transitions */
+  --global-timing: ease;
+  --global-duration: 0.25s;
+  --global-transition: var(--global-duration) var(--global-timing);
+}
+
+/* @media (--mq-tablet-and-up) {
+  :root {
+    --font-size--h1: calc((88 / 16) * 1rem);
+    --font-size--h2: calc((64 / 16) * 1rem);
+    --font-size--h3: calc((48 / 16) * 1rem);
+    --font-size--h4: calc((36 / 16) * 1rem);
+    --font-size--h5: calc((24 / 16) * 1rem);
+    --font-size--h6: calc((16 / 16) * 1rem);
+    --font-size--base: calc((16 / 16) * 1rem);
+  }
+}
+
+@media (--mq-desk-and-up) {
+  :root {
+    --font-size--h1: calc((88 / 16) * 1rem);
+    --font-size--h2: calc((64 / 16) * 1rem);
+    --font-size--h3: calc((48 / 16) * 1rem);
+    --font-size--h4: calc((36 / 16) * 1rem);
+    --font-size--h5: calc((24 / 16) * 1rem);
+    --font-size--h6: calc((16 / 16) * 1rem);
+    --font-size--base: calc((16 / 16) * 1rem);
+  }
+} */

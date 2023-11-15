@@ -1,0 +1,59 @@
+.MailingList__Grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--gap);
+}
+
+@media (--mq-tablet-and-up) {
+  .MailingList__Grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* Form */
+.mc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: var(--spacing--xs);
+}
+
+
+.mc-field-group label,
+.indicates-required {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.mc-field-group {
+  margin-bottom: var(--spacing--s);
+  input[type="text"],
+  input[type="email"] {
+    border: 0;
+    background-color: transparent;
+    border-bottom: solid 1px currentColor;
+    width: 100%;
+    padding: 0 0 0.5em 0;
+  }
+}
+
+
+
+/* Colour Specifc */
+.has-background.dark-purple,
+.has-background.black {
+  .mc-field-group input {
+    color: var(--color-white);
+  }
+  .Button{
+    color: var(--color-white);
+  }
+}

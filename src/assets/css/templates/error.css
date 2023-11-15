@@ -1,0 +1,53 @@
+/* 404 */
+
+body.TemplateError {
+  & .ContentWrapper {
+    text-align: center;
+  }
+
+  & #FooterWave,
+  & .Footer {
+    display: none;
+  }
+}
+
+.FourOhFour {
+  text-align: center;
+  padding: 80px 0;
+  background-color: var(--color-yellow);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FourOhFour__Content {
+  max-width: 721px;
+  margin: 0 auto;
+}
+
+.FourOhFour__Title {
+  width: 100%;
+  height: auto;
+  max-width: 396px;
+  margin: 0 auto;
+}
+
+p.FourOhFour__Text {
+  font-family: var(--typeface-global);
+  font-weight: 500;
+  letter-spacing: 0;
+  font-size: var(--font-size--h4);
+  margin: var(--spacing-s) 0;
+}
+
+.FourOhFour__Link {
+  color: var(--color-white);
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    color: var(--color-white);
+  }
+}
